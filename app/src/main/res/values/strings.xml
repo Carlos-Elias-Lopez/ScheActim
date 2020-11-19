@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ScheActim</string>
+    <string name="welcome_desc">Organiza tus días... para disfrutar la vida</string>
+    <string name="start">EMPECEMOS</string>
 </resources>
