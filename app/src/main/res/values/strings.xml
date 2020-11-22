@@ -2,4 +2,13 @@
     <string name="app_name">ScheActim</string>
     <string name="welcome_desc">Organiza tus días... para disfrutar la vida</string>
     <string name="start">EMPECEMOS</string>
+    <string name="banner">Banner</string>
+    <string name="empecemos">¡Empecemos!</string>
+    <string name="fullname">Nombre completo</string>
+    <string name="email">Correo electrónico</string>
+    <string name="fullname_sample">Ejemplo: Josue Daniel</string>
+    <string name="email_sample">Ejemplo: josuedaniel@mail.com</string>
+    <string name="signUp">¡REGISTRARSE!</string>
+    <string name="help_cta_content">¿Tienés alguna duda? contáctanos</string>
+
 </resources>
