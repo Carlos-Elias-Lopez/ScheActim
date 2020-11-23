@@ -10,5 +10,6 @@
     <string name="email_sample">Ejemplo: josuedaniel@mail.com</string>
     <string name="signUp">¡REGISTRARSE!</string>
     <string name="help_cta_content">¿Tienés alguna duda? contáctanos</string>
+    <string name="descripcion">descripcion</string>
 
 </resources>
