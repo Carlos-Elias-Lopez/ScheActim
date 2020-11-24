@@ -20,19 +20,18 @@ public class StartActivity extends Activity {
     }
 
     private void launchFirstActivity() {
-
         UserConfig userConfig = new UserConfig(getApplicationContext());
-        Intent transicion;
+        Intent intent;
         if(userConfig.isFirstTime()) {
-
-            transicion = new Intent(getBaseContext(), MainActivity.class);
-
+            intent = new Intent(getBaseContext(), appintro.class);
         } else {
-            transicion = new Intent(getBaseContext(), signup.class);
-
+            if(userConfig.userExists()) {
+                intent = new Intent(getBaseContext(), RecyclerActividadesActivity.class);
+            } else {
+                intent = new Intent(getBaseContext(), signup.class);
+            }
         }
-
-        startActivity(transicion);
+        startActivity(intent);
         //finalizar esta actividad
         finish();
     }

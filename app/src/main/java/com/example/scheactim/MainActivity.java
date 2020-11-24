@@ -26,33 +26,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        cambiaractivity();
 
-    }
-    private void cambiaractivity(){
 
-        Button BtnCambiar = findViewById(R.id.btn_comenzar);
-        BtnCambiar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navegarActivity();
-            }
-        });
-    }
-
-    private void navegarActivity(){
-        saveFirstStart();
-
-        Intent transicion = new Intent(this, signup.class);
-        //la proxima activity ahora será la primera en el back stack
-        //transicion.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(transicion);
-    }
-
-    private void saveFirstStart() {
-
-        UserConfig userConfig = new UserConfig(getApplicationContext());
-        userConfig.setIsFirstTime(false);
     }
 
 
