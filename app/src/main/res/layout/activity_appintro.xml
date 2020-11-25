@@ -28,13 +28,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
         android:text="@string/app_name"
-        app:layout_constraintBottom_toTopOf="@id/tv_desc"
+        app:layout_constraintBottom_toTopOf="@id/frase"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_logo" />
 
     <TextView
-        android:id="@+id/tv_desc"
+        android:id="@+id/frase"
         style="@style/AppTheme.Base.desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
         android:layout_marginTop="30dp"
         android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_desc"
+        app:layout_constraintTop_toBottomOf="@id/frase"
         tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,16 +14,18 @@ public class ModeloActividades implements Parcelable{
     private String nombre;
     private String descripcion;
     private boolean prioridad;
+    private String category;
     private Date fecha_inicio;
     private Date fecha_fin;
 
 
     //GENERACION DE CONSTRUCTOR
-    public ModeloActividades(String id, String nombre, String descripcion, boolean prioridad, Date fecha_inicio, Date fecha_fin) {
+    public ModeloActividades(String id, String nombre, String descripcion, String category) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.prioridad = prioridad;
+        this.category = category;
         this.fecha_inicio = fecha_inicio;
         this.fecha_fin = fecha_fin;
     }
@@ -61,6 +63,14 @@ public class ModeloActividades implements Parcelable{
         this.prioridad = prioridad;
     }
 
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
     public Date getFecha_inicio() {
         return fecha_inicio;
     }
@@ -85,6 +95,7 @@ public class ModeloActividades implements Parcelable{
         nombre = in.readString();
         descripcion = in.readString();
         prioridad = in.readByte() != 0x00;
+        category = in.readString();
         long tmpFecha_inicio = in.readLong();
         fecha_inicio = tmpFecha_inicio != -1 ? new Date(tmpFecha_inicio) : null;
         long tmpFecha_fin = in.readLong();
@@ -102,11 +113,12 @@ public class ModeloActividades implements Parcelable{
         dest.writeString(nombre);
         dest.writeString(descripcion);
         dest.writeByte((byte) (prioridad ? 0x01 : 0x00));
+        dest.writeString(category);
         dest.writeLong(fecha_inicio != null ? fecha_inicio.getTime() : -1L);
         dest.writeLong(fecha_fin != null ? fecha_fin.getTime() : -1L);
     }
 
-    @SuppressWarnings("unused")
+
     public static final Parcelable.Creator<ModeloActividades> CREATOR = new Parcelable.Creator<ModeloActividades>() {
         @Override
         public ModeloActividades createFromParcel(Parcel in) {

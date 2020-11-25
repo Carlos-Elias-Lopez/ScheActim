@@ -26,7 +26,7 @@ public class StartActivity extends Activity {
             intent = new Intent(getBaseContext(), appintro.class);
         } else {
             if(userConfig.userExists()) {
-                intent = new Intent(getBaseContext(), RecyclerActividadesActivity.class);
+                intent = new Intent(getBaseContext(), MainActivity.class);
             } else {
                 intent = new Intent(getBaseContext(), signup.class);
             }

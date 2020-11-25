@@ -7,9 +7,9 @@ import android.text.TextUtils;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.scheactim.BuildConfig;
-import com.example.scheactim.modelos.UserModel;
 
+import com.example.scheactim.modelos.UserModel;
+import com.example.scheactim.BuildConfig;
 import java.util.Locale;
 
 public class UserConfig {
@@ -65,7 +65,6 @@ public class UserConfig {
         prefsEditor.apply();
         return true;
     }
-
     private String getPrefsName() {
         return String.format(
                 Locale.getDefault(),
@@ -73,4 +72,6 @@ public class UserConfig {
                 BuildConfig.APPLICATION_ID , USER_PREF_NAME
         );
     }
+
+
 }

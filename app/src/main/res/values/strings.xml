@@ -11,5 +11,8 @@
     <string name="signUp">¡REGISTRARSE!</string>
     <string name="help_cta_content">¿Tienés alguna duda? contáctanos</string>
     <string name="descripcion">descripcion</string>
+    <string name="category">categoría</string>
+    <string name="welcome_user_title">Bienvenido, %s</string>
+    <string name="cannot_get_email">No pudimos obtener el email :(</string>
 
 </resources>

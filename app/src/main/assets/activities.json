@@ -1,58 +1,74 @@
 {
   "data": [
     {
+
       "nombre": "Terminar tarea de Matemáticas",
       "descripcion": "Cumplir con el mínimo de ejercicios de aritmética",
       "prioridad": "true",
+      "category": "finalizado",
       "fecha_inicio": "2020/12/09",
       "fecha_fin": "2020/12/09"
     },
     {
+
       "nombre": "Ir al supermercado",
       "descripcion": "Comprar alcohol gel y jabón líquido",
       "prioridad": "true",
+      "category": "finalizado",
       "fecha_inicio": "2020/11/09",
       "fecha_fin": "2020/11/09"
     },
     {
+
       "nombre": "Entregar el proyecto de Historia Universal",
       "descripcion": "Dar los últimos retoques al ensayo",
       "prioridad": "true",
+      "category": "pendiente",
       "fecha_inicio": "2020/10/02",
       "fecha_fin": "2020/10/05"
     },
     {
+
       "nombre": "Ir a Metrocentro con mis amigos",
       "descripcion": "Para celebrar el cumpleaños de Juan",
       "prioridad": "true",
+      "category": "pendiente",
       "fecha_inicio": "2020/10/02",
       "fecha_fin": "2020/10/05"
     },
     {
+
       "nombre": "Terminar el trabajo de Literatura Antigua",
       "descripcion": "Buscar en la lectura los hitos para la línea de tiempo",
       "prioridad": "true",
+      "category": "retrasado",
       "fecha_inicio": "2020/07/02",
       "fecha_fin": "2020/07/05"
     },
     {
+
       "nombre": "Visitar a mi abuelo",
       "descripcion": "Para regalarle una cesta de jaleas",
       "prioridad": "true",
+      "category": "finalizado",
       "fecha_inicio": "2020/01/02",
       "fecha_fin": "2020/01/02"
     },
     {
+
       "nombre": "Terminar el proyecto de CCNN",
       "descripcion": "Agregar detalles al album de la fauna",
       "prioridad": "true",
+      "category": "pendiente",
       "fecha_inicio": "2020/01/02",
       "fecha_fin": "2020/01/10"
     },
     {
+
       "nombre": "Tener videollamada con mi grupo de ECA",
       "descripcion": "Como ṕractica para la exposición",
       "prioridad": "true",
+      "category": "retrasado",
       "fecha_inicio": "2020/05/02",
       "fecha_fin": "2020/05/02"
     }
