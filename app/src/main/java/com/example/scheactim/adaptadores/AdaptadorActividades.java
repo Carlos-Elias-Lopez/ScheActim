@@ -4,7 +4,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,7 +13,6 @@ import java.util.List;
 
 
 import  com.example.scheactim.R;
-import com.example.scheactim.adaptadores.viewholder.ActividadesViewHelper;
 import  com.example.scheactim.adaptadores.viewholder.ActividadesViewHolder;
 import  com.example.scheactim.helpers.eventos.ItemTapListener;
 import  com.example.scheactim.modelos.ModeloActividades;
@@ -45,9 +43,8 @@ public class AdaptadorActividades extends RecyclerView.Adapter<ActividadesViewHo
     //inflamos cada item con su respectiva vista.
     public ActividadesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        Log.e(TAG, "Entro a la inflacion");
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View itemView = inflater.inflate(R.layout.recycler_actividades, parent, false);
+        View itemView = inflater.inflate(R.layout.item_actividades, parent, false);
         ActividadesViewHolder viewHolder = new ActividadesViewHolder(itemView, mTapListener);
         return viewHolder;
     }
@@ -55,13 +52,13 @@ public class AdaptadorActividades extends RecyclerView.Adapter<ActividadesViewHo
     @Override
     public void onBindViewHolder(@NonNull ActividadesViewHolder holder, int position) {
 
-        Log.e(TAG, "Agrego a las dependencias los archivos de mockup");
+
         ModeloActividades currentModel = mModelList.get(position);
         holder.tvName.setText(currentModel.getNombre());
         holder.tvDesc.setText(currentModel.getDescripcion());
-        holder.ivCategory.setImageResource(
+        /*holder.ivCategory.setImageResource(
                 ActividadesViewHelper.getResIdByCategory(currentModel.getCategory())
-        );
+        );*/
     }
 
     @Override

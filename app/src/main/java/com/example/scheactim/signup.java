@@ -69,7 +69,7 @@ public class signup extends AppCompatActivity {
     private void navegarActivity(UserModel user){
 
 
-        Intent transicion = new Intent(this, RecyclerActividadesActivity.class);
+        Intent transicion = new Intent(this, MainActivity.class);
         //la proxima activity ahora será la primera en el back stack
         //transicion.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(transicion);

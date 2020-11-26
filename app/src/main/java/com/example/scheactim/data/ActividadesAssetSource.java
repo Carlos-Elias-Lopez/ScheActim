@@ -33,16 +33,25 @@ public class ActividadesAssetSource implements IActividadesSource {
 
         String json = FileHelper.getJsonFromAssets(mContext, POINTS_FILE_NAME);
         ListResult listResult = parser.fromJson(json, ListResult.class);
-        return listResult.data;
+        if(listResult == null) return null;
+        return filterByCount(listResult.list, count);
+
+    }
+
+    private List<ModeloActividades> filterByCount( @NonNull List<ModeloActividades> originalList, int count) {
+        if(count < 0) throw new IllegalArgumentException("Parametro count inválido");
+        if(count == 0) return originalList;
+        if(count >= originalList.size()) return originalList;
+        return originalList.subList(0, count);
     }
 
 
     static class ListResult {
         @SerializedName("data")
-        List<ModeloActividades> data;
+        List<ModeloActividades> list;
 
-        public ListResult(List<ModeloActividades> data) {
-            this.data = data;
+        public ListResult(List<ModeloActividades> list) {
+            this.list = list;
         }
     }
 }

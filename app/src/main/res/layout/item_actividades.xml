@@ -21,7 +21,7 @@
             android:contentDescription="@string/category"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/logo"
+            tools:src="@drawable/clock"
             />
 
         <TextView

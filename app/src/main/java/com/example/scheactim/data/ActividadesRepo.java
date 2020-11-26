@@ -13,7 +13,6 @@ public class ActividadesRepo {
     private final IActividadesSource mSource;
 
     public ActividadesRepo(Context context) {
-        Log.e(TAG, " Entro A leer los datos  en actividades repo");
 
         mSource = new ActividadesAssetSource(context);
     }
@@ -23,6 +22,6 @@ public class ActividadesRepo {
     }
 
     public List<ModeloActividades> getAll() {
-        return mSource.getAll(30);
+        return mSource.getAll(50);
     }
 }

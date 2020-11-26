@@ -43,12 +43,12 @@ public class MainActivity extends AppCompatActivity implements ItemTapListener {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        Log.e(TAG, "Entro Main Activity");
+
         setup();
 
     }
     private void setup() {
-        Log.e(TAG, "Entro en setup");
+
         mPointsRepository = new ActividadesRepo(getBaseContext());
         mModelList = new ArrayList<>();
 
@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity implements ItemTapListener {
 
         String email = startIntent.getStringExtra(EMAIL_KEY);
         if(TextUtils.isEmpty(email)) {
-            Log.e(TAG, "Aqui es antes de on resume ");
             Toast.makeText(
                     this,
                     R.string.cannot_get_email,
@@ -87,14 +86,13 @@ public class MainActivity extends AppCompatActivity implements ItemTapListener {
     @Override
     protected void onResume() {
         super.onResume();
-        Log.e(TAG, "Entro a la ON resume");
         loadData();
     }
 
     private void setupPointListView() {
 
-        Log.e(TAG, "EntrosetupPointListView para llenaer");
-        RecyclerView rvPoints = findViewById(R.id.rv_points);
+
+        RecyclerView rvPoints = findViewById(R.id.rv_actividades);
         mPointsAdapter = new AdaptadorActividades(mModelList, this);
         rvPoints.setAdapter(mPointsAdapter);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getBaseContext());
@@ -103,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements ItemTapListener {
     }
 
     private void loadData() {
-        Log.e(TAG, "Entro a LoadData");
+
         if(!mModelList.isEmpty()) {
             Log.d(TAG, "Ya existen valores en la lista");
             return;

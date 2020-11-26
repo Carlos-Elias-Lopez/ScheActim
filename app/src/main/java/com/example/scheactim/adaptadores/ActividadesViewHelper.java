@@ -1,4 +1,4 @@
-package com.example.scheactim.adaptadores.viewholder;
+package com.example.scheactim.adaptadores;
 
 import androidx.annotation.DrawableRes;
 
