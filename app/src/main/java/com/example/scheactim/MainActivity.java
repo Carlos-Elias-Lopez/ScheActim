@@ -70,16 +70,6 @@ public class MainActivity extends AppCompatActivity implements ItemTapListener {
             getSupportActionBar().setTitle(getString(R.string.welcome_user_title, fullname));
         }
 
-        String email = startIntent.getStringExtra(EMAIL_KEY);
-        if(TextUtils.isEmpty(email)) {
-            Toast.makeText(
-                    this,
-                    R.string.cannot_get_email,
-                    Toast.LENGTH_SHORT
-            ).show();
-            return;
-        }
-
         rootView = findViewById(R.id.ly_root);
         setupPointListView();
     }

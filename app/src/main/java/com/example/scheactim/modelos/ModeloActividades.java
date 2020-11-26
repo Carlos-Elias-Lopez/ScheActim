@@ -15,8 +15,8 @@ public class ModeloActividades implements Parcelable{
     private String descripcion;
     private boolean prioridad;
     private String category;
-    private Date fecha_inicio;
-    private Date fecha_fin;
+    private String fecha_inicio;
+    private String fecha_fin;
 
 
     //GENERACION DE CONSTRUCTOR
@@ -71,19 +71,17 @@ public class ModeloActividades implements Parcelable{
         this.category = category;
     }
 
-    public Date getFecha_inicio() {
+    public String getFecha_inicio(String fecha_inicio) {
         return fecha_inicio;
     }
-
-    public void setFecha_inicio(Date fecha_inicio) {
+    public void setFecha_inicio(String fecha_inicio) {
         this.fecha_inicio = fecha_inicio;
     }
 
-    public Date getFecha_fin() {
+    public String getFecha_fin(String fecha_fin) {
         return fecha_fin;
     }
-
-    public void setFecha_fin(Date fecha_fin) {
+    public void setFecha_fin(String fecha_fin) {
         this.fecha_fin = fecha_fin;
     }
 
@@ -97,9 +95,9 @@ public class ModeloActividades implements Parcelable{
         prioridad = in.readByte() != 0x00;
         category = in.readString();
         long tmpFecha_inicio = in.readLong();
-        fecha_inicio = tmpFecha_inicio != -1 ? new Date(tmpFecha_inicio) : null;
+        fecha_inicio = in.readString();
         long tmpFecha_fin = in.readLong();
-        fecha_fin = tmpFecha_fin != -1 ? new Date(tmpFecha_fin) : null;
+        fecha_fin = in.readString();
     }
 
     @Override
@@ -114,8 +112,8 @@ public class ModeloActividades implements Parcelable{
         dest.writeString(descripcion);
         dest.writeByte((byte) (prioridad ? 0x01 : 0x00));
         dest.writeString(category);
-        dest.writeLong(fecha_inicio != null ? fecha_inicio.getTime() : -1L);
-        dest.writeLong(fecha_fin != null ? fecha_fin.getTime() : -1L);
+        dest.writeString(fecha_inicio);
+        dest.writeString(fecha_fin );
     }
 
 

@@ -56,9 +56,9 @@ public class AdaptadorActividades extends RecyclerView.Adapter<ActividadesViewHo
         ModeloActividades currentModel = mModelList.get(position);
         holder.tvName.setText(currentModel.getNombre());
         holder.tvDesc.setText(currentModel.getDescripcion());
-        /*holder.ivCategory.setImageResource(
+        holder.ivCategory.setImageResource(
                 ActividadesViewHelper.getResIdByCategory(currentModel.getCategory())
-        );*/
+        );
     }
 
     @Override
