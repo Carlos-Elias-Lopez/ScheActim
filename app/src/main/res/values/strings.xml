@@ -14,5 +14,9 @@
     <string name="category">categoría</string>
     <string name="welcome_user_title">Bienvenido, %s</string>
     <string name="cannot_get_email">No pudimos obtener el email :(</string>
+    <string name="permisos_de_la_aplicacion">Permisos de la Aplicacion</string>
+    <string name="frasePermitir">¿Quieres permitir que ScheActim acceda a tu calendario?</string>
+    <string name="permitir">PERMITIR</string>
+    <string name="denegar">DENEGAR</string>
 
 </resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".permisos">
+
+    <TextView
+        android:id="@+id/Permisos"
+        style="@style/AppTheme.Base.desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/permisos_de_la_aplicacion"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/iv_hero"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/iv_hero"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:contentDescription="@string/banner"
+        android:scaleType="centerInside"
+        android:src="@drawable/calendar"
+        app:layout_constraintStart_toStartOf="@id/Permisos"
+        app:layout_constraintRight_toRightOf="@id/Permisos"
+        app:layout_constraintTop_toBottomOf="@id/Permisos"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="@string/frasePermitir"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/iv_hero"
+        app:layout_constraintRight_toRightOf="@id/iv_hero"
+        app:layout_constraintTop_toBottomOf="@id/iv_hero"/>
+
+    <Button
+        android:id="@+id/btn_permitir"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/permitir"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintRight_toRightOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+
+    <Button
+        android:id="@+id/btn_denegar"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/denegar"
+        app:layout_constraintStart_toStartOf="@id/btn_permitir"
+        app:layout_constraintRight_toRightOf="@id/btn_permitir"
+        app:layout_constraintTop_toBottomOf="@id/btn_permitir"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
