@@ -32,7 +32,7 @@ public class appintro extends AppCompatActivity {
 
     private void navegarActivity(){
         saveFirstStart();
-        Intent transicion = new Intent(this, signup.class);
+        Intent transicion = new Intent(this, permisos.class);
         //la proxima activity ahora será la primera en el back stack
         transicion.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(transicion);

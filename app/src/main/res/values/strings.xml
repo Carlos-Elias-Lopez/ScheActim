@@ -18,5 +18,13 @@
     <string name="frasePermitir">¿Quieres permitir que ScheActim acceda a tu calendario?</string>
     <string name="permitir">PERMITIR</string>
     <string name="denegar">DENEGAR</string>
+    <string name="panel_de_actividades">Panel de Actividades</string>
+    <string name="Nombre">Nombre de Actividad</string>
+    <string name="descripcionPanel">Descripción</string>
+    <string name="prioridad">Prioridad</string>
+    <string name="fecha_inicio">Fecha Inicio</string>
+    <string name="fecha_fin">Fecha Fin</string>
+    <string name="guardar">Guardar</string>
+    <string name="eliminar">Eliminar</string>
 
 </resources>
