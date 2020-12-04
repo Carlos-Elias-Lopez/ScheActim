@@ -13,7 +13,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.scheactim.Fragments.ActividadesFragment;
+import com.example.scheactim.Fragments.DiasFragment;
 import com.example.scheactim.Fragments.MainFragment;
+import com.example.scheactim.Fragments.SemanasFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MenuPrincipal extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -57,6 +59,8 @@ public class MenuPrincipal extends AppCompatActivity implements NavigationView.O
         fragmentTransaction.commit();
 
 
+
+
     }
 
     @Override
@@ -75,6 +79,18 @@ public class MenuPrincipal extends AppCompatActivity implements NavigationView.O
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container_fragment,new ActividadesFragment());
+            fragmentTransaction.commit();
+        }
+        if(menuItem.getItemId() == R.id.vista_semanal){
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container_fragment,new SemanasFragment());
+            fragmentTransaction.commit();
+        }
+        if(menuItem.getItemId() == R.id.vista_diaria){
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container_fragment,new DiasFragment());
             fragmentTransaction.commit();
         }
 

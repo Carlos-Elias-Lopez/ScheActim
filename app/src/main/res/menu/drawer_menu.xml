@@ -15,14 +15,8 @@
                 android:id="@+id/guardar_actividad"
                 android:icon="@drawable/guardar_actividad"
                 android:title="@string/guardar_actividad"/>
-            <item
-                android:id="@+id/tiempo_invertido"
-                android:icon="@drawable/tiempo_invertido"
-                android:title="@string/tiempo_invertido"/>
-            <item
-                android:id="@+id/vista_kanban"
-                android:icon="@drawable/vista"
-                android:title="@string/vista_kanban"/>
+
+
             <item
                 android:id="@+id/vista_semanal"
                 android:icon="@drawable/vista"

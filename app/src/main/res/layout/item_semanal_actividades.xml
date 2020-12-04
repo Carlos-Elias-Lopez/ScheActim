@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/imagen_actividad"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/calendar_icon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_fecha_semanal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15/12/2020"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/imagen_actividad"
+            android:layout_toEndOf="@id/imagen_actividad"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="0dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_descripcion_semanal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_fecha_semanal"
+            android:layout_toRightOf="@id/imagen_actividad"
+            android:layout_toEndOf="@id/imagen_actividad"
+            android:layout_marginStart="10dp"
+            tools:text="Selecciona todo lo agendado para este dia"
+            android:layout_marginLeft="10dp" />
+        <ImageView
+            android:id="@+id/Logo_principal"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tv_descripcion_semanal"
+            android:src="@drawable/proximamente"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="150dp">
+
+        </ImageView>
+
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:contentDescription="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</androidx.cardview.widget.CardView>
+
+

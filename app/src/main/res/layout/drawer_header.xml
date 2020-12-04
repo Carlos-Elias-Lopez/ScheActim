@@ -9,22 +9,23 @@
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     xmlns:tools="http://schemas.android.com/tools">
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        />
+        android:layout_width="97dp"
+        android:layout_height="74dp"
+        android:src="@drawable/avatar" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
-        android:text="Usuario"
-        android:textColor="#fff"
+        android:text="Carlos"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        />
+        android:textColor="#fff" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#fff"
-        android:text="usuario@gmail.com"/>
+        android:text="@string/correo"/>
 </LinearLayout>
