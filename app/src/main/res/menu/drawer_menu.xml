@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Principal">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/ic_baseline_home_24"
+                android:title="@string/home"/>
+
+            <item
+                android:id="@+id/ver_actividad"
+                android:icon="@drawable/ver_actividad"
+                android:title="@string/ver_actividad"/>
+            <item
+                android:id="@+id/guardar_actividad"
+                android:icon="@drawable/guardar_actividad"
+                android:title="@string/guardar_actividad"/>
+            <item
+                android:id="@+id/tiempo_invertido"
+                android:icon="@drawable/tiempo_invertido"
+                android:title="@string/tiempo_invertido"/>
+            <item
+                android:id="@+id/vista_kanban"
+                android:icon="@drawable/vista"
+                android:title="@string/vista_kanban"/>
+            <item
+                android:id="@+id/vista_semanal"
+                android:icon="@drawable/vista"
+                android:title="@string/vista_semanal"/>
+            <item
+                android:id="@+id/vista_diaria"
+                android:icon="@drawable/vista"
+                android:title="@string/vista_diaria"/>
+
+
+        </menu>
+
+    </item>
+</menu>

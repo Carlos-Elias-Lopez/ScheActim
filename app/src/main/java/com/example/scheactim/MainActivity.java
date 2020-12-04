@@ -1,5 +1,7 @@
 package com.example.scheactim;
 
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,10 +13,12 @@ import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.scheactim.adaptadores.AdaptadorActividades;
 import com.example.scheactim.data.ActividadesRepo;
+import com.example.scheactim.data.ScheActimEntriesDao;
 import com.example.scheactim.helpers.eventos.ItemTapListener;
 import com.example.scheactim.modelos.ModeloActividades;
 import com.google.android.material.snackbar.Snackbar;
@@ -38,6 +42,11 @@ public class MainActivity extends AppCompatActivity implements ItemTapListener {
 
     private ViewGroup rootView;
 
+    //esta parte hace referencia a los de guardar actividad
+    private static final int SAVE_REQUEST_CODE = 10;
+   // private TextView tvContent;
+    //private ScheActimEntriesDao entriesDao;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +56,8 @@ public class MainActivity extends AppCompatActivity implements ItemTapListener {
         setup();
 
     }
+
+
     private void setup() {
 
         mPointsRepository = new ActividadesRepo(getBaseContext());
@@ -72,6 +83,15 @@ public class MainActivity extends AppCompatActivity implements ItemTapListener {
 
         rootView = findViewById(R.id.ly_root);
         setupPointListView();
+
+        findViewById(R.id.fab_add).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //navigateToSaveScreen();
+            }
+        });
+
+
     }
     @Override
     protected void onResume() {
@@ -128,6 +148,11 @@ public class MainActivity extends AppCompatActivity implements ItemTapListener {
         ).show();
     }
 
+
+
 }
+
+
+
 
 

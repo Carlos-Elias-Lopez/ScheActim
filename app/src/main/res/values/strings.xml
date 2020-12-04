@@ -26,5 +26,19 @@
     <string name="fecha_fin">Fecha Fin</string>
     <string name="guardar">Guardar</string>
     <string name="eliminar">Eliminar</string>
+    <string name="add">Agregar</string>
+    <string name="entry_saved">"Actividad Guardada con exito "</string>
+    <string name="error_saving_entry">Disculpa, ha ocurrido un error al guardar la entrada, intenta nuevamente.</string>
+    <string name="no_data">Lista Vacia</string>
+    <string name="sample_long_text">LoremIpsumLoremIpsumNumberIpsum</string>
+    <string name="vista_diaria">Vista Diaria</string>
+    <string name="vista_semanal">Vista Semanal</string>
+    <string name="home">Inicio</string>
+    <string name="ver_actividad">Ver Actividades</string>
+    <string name="vista_kanban">Vista Kanban</string>
+    <string name="tiempo_invertido">Tiempo Invertido</string>
+    <string name="guardar_actividad">Guardar Actividades</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
 
 </resources>

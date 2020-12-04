@@ -8,20 +8,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
 
-    <style name="AppTheme.Base.Title1" parent="Widget.AppCompat.TextView">
-        <item name="android:textSize">24sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/purple_700</item>
-        <!--<item name="android:textAlignment">center</item>-->
-    </style>
 
-    <style name="AppTheme.Base.desc" parent="Widget.AppCompat.TextView">
-        <item name="android:textSize">24sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/purple_500</item>
-        <!--<item name="android:textAlignment">center</item>-->
-    </style>
 </resources>

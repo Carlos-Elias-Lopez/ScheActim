@@ -2,9 +2,12 @@ package com.example.scheactim.data;
 
 import android.content.Context;
 import android.util.Log;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.example.scheactim.R;
+import com.example.scheactim.modelos.ActividadesEntry;
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 
@@ -23,6 +26,8 @@ public class ActividadesAssetSource implements IActividadesSource {
     private final Context mContext;
     private static final String POINTS_FILE_NAME = "activities.json";
 
+    private TextView tvContent;
+    private ScheActimEntriesDao entriesDao;
     ActividadesAssetSource(@NonNull Context context) {
         mContext = context;
         parser = new Gson();
@@ -35,6 +40,10 @@ public class ActividadesAssetSource implements IActividadesSource {
         ListResult listResult = parser.fromJson(json, ListResult.class);
         if(listResult == null) return null;
         return filterByCount(listResult.list, count);
+
+
+
+
 
     }
 

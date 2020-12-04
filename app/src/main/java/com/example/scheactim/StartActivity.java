@@ -26,9 +26,9 @@ public class StartActivity extends Activity {
             intent = new Intent(getBaseContext(), appintro.class);
         } else {
             if(userConfig.userExists()) {
-                intent = new Intent(getBaseContext(), GuardarActividad.class);
+                intent = new Intent(getBaseContext(), MenuPrincipal.class);
             } else {
-                intent = new Intent(getBaseContext(), GuardarActividad.class);
+                intent = new Intent(getBaseContext(), signup.class);
             }
         }
         startActivity(intent);

@@ -28,7 +28,7 @@ public class ActividadesViewHolder extends RecyclerView.ViewHolder implements Vi
 
         tvName = itemView.findViewById(R.id.tv_name);
         tvDesc = itemView.findViewById(R.id.tv_desc);
-        ivCategory = itemView.findViewById(R.id.iv_category);
+        //ivCategory = itemView.findViewById(R.id.iv_category);
     }
 
     @Override
