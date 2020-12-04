@@ -14,6 +14,7 @@ import android.view.MenuItem;
 
 import com.example.scheactim.Fragments.ActividadesFragment;
 import com.example.scheactim.Fragments.DiasFragment;
+import com.example.scheactim.Fragments.GuardarActividadFragment;
 import com.example.scheactim.Fragments.MainFragment;
 import com.example.scheactim.Fragments.SemanasFragment;
 import com.google.android.material.navigation.NavigationView;
@@ -79,6 +80,12 @@ public class MenuPrincipal extends AppCompatActivity implements NavigationView.O
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container_fragment,new ActividadesFragment());
+            fragmentTransaction.commit();
+        }
+        if(menuItem.getItemId() == R.id.guardar_actividad){
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container_fragment,new GuardarActividadFragment());
             fragmentTransaction.commit();
         }
         if(menuItem.getItemId() == R.id.vista_semanal){

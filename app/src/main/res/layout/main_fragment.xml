@@ -12,6 +12,8 @@
         android:layout_marginStart="84dp"
         android:layout_marginTop="150dp"
         android:text="EQUIPO PIDGEY"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
